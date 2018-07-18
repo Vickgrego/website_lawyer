@@ -5,30 +5,46 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    var interval = 7000;
-    var fadeVelocity = 500;
+    let interval = 7000;
+    let fadeVelocity = 500;
 
     setInterval(function () {
 
         var slidesArray = $(".slide-elem");
-        var i = 0;
-        var tempArray = [];
-        var firstHtml = slidesArray.eq(0).html();
+	var slidesTextArray = $(".slide-text");
+        let i = 0;
+var firstImg = slidesArray.eq(0).attr('src');
+var firstTxt = slidesTextArray.eq(0).text();
 
         slidesArray.each(function () {
-		var htmlData = null;
+
+
 		$(this).fadeOut(fadeVelocity, function(){
+			console.log("==========" + i);
+			let thisImg = slidesArray.eq(i);
+			let thisText = slidesTextArray.eq(i);
+			let htmlData = null;
+			let text = null;
+
 			 if (i > slidesArray.length - 2) {
-				htmlData = firstHtml;
+				htmlData = firstImg;
+				text = firstTxt;
 			    } else {
-				htmlData = slidesArray.eq(i + 1).html();
+				htmlData = slidesArray.eq(i + 1).attr('src');
+				text = slidesTextArray.eq(i + 1).text();
 			    }
-            $(this).html(htmlData);
+		console.log(thisImg.attr("src") + " " + htmlData);
+            thisImg.attr("src", htmlData);
+	    thisText.text(text);
+	
 		$(this).fadeIn(fadeVelocity);
-            i++;
+           i++;
+ 
+		console.log("======+++++++++====" + i);
+
 		
 		});
-            //slidesArray.length - 2, coz we have slidesArray.eq(i+1)
+
    
 
 
