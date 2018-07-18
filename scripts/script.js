@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
 
     var interval = 7000;
-    var fadeVelocity = 100;
+    var fadeVelocity = 500;
 
     setInterval(function () {
 
@@ -16,15 +16,22 @@ $(document).ready(function () {
         var firstHtml = slidesArray.eq(0).html();
 
         slidesArray.each(function () {
-            //slidesArray.length - 2, coz we have slidesArray.eq(i+1)
-            if (i > slidesArray.length - 2) {
-                var htmlData = firstHtml;
-            } else {
-                var htmlData = slidesArray.eq(i + 1).html();
-            }
-
+		var htmlData = null;
+		$(this).fadeOut(fadeVelocity, function(){
+			 if (i > slidesArray.length - 2) {
+				htmlData = firstHtml;
+			    } else {
+				htmlData = slidesArray.eq(i + 1).html();
+			    }
             $(this).html(htmlData);
+		$(this).fadeIn(fadeVelocity);
             i++;
+		
+		});
+            //slidesArray.length - 2, coz we have slidesArray.eq(i+1)
+   
+
+
         });
 
     }, interval);
@@ -35,7 +42,7 @@ $(document).ready(function () {
     //alert(headerHeight);
     
     $(document).on('click', 'a', function (event) {
-        event.preventDefault();
+        //event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top - headerHeight

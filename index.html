@@ -26,17 +26,28 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                         </button>
-                        <a class="navbar-brand" href="#wrapper">AO Sofyak & Partners</a>
+                        <a class="navbar-brand" href="index.html">AO Sofyak & Partners</a>
                     </div>
                     <div id="HeaderNavbar" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
+
                             <li class="active"><a href="#initial-stats">На початок</a></li>
                             <li><a href="#about">Про нас</a></li>
-                            <li><a href="#pract">Наші практики</a></li>
-                            <li><a href="#contacts">Наші контакти</a></li>
+                            <li class="dropdown show">
+				
+					<a class="btn btn-secondary dropdown-toggle" href="#"" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наші послуги</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <li class="dropdown-item"><a href="law.html">Послуги адвоката</a></li>
+					    <li class="dropdown-item"><a href="school.html">Школа юридичної майстерності</a></li>
+					    <li class="dropdown-item"><a href="mediation.html">Медіація</a></li>
+					  </ul>                            	
+				
+				</li>
+			    <li><a href="#contacts">Наші контакти</a></li>
                         </ul>
                         <p id="address" class="hidden-xs hidden-sm navbar-text navbar-right"><span class="glyphicon glyphicon-envelope"></span> м.Чернівці, вул.Прутська, 16 <br /><span class="glyphicon glyphicon-phone-alt"></span> (037) 594 134 / 594 135</p>
                     </div>
+
                 </div>
             </nav>
         </header>
@@ -60,14 +71,20 @@
                 <div class="main-grid">
                     <!-- 1-st ROW -->
                     <div class="row">
-                        <div class="slide-elem col-md-7 first-row">
+                        <div class="slide-elem col-md-9 first-row">
                                 <img class="img-responsive img-rounded img-fit" src="./data/pict/4005.jpg" />
                                 <p>first data</p>
                         </div>
-                        <div class="slide-elem col-md-5 first-row">
-                            <img class="img-responsive img-rounded img-fit" src="./data/pict/crew_3.jpg" />
-                            <p>second data</p>
+			<div class="row col-md-3 first-row">
+                        <div class="slide-elem sec-row">
+                            		<img class="img-responsive img-rounded img-fit" src="./data/pict/crew_3.jpg" />
+                            		<p>second data</p>
                         </div>
+			<div class="slide-elem sec-row">
+                            		<img class="img-responsive img-rounded img-fit" src="./data/pict/phrase_2.jpg" />
+                            		<p>some data</p>
+                        </div>
+			</div>
                     </div>
                     <!-- ROW 2 -->
                     <div class="row">
@@ -181,14 +198,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section id="pract" class="page-header">
-                    <div class="row">
-                        
-                    </div>
-                    <div class="row">
-                        
                     </div>
                 </section>
                 <section id="contacts" class="page-header row">
