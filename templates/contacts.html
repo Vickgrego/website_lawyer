@@ -1,9 +1,13 @@
 {% extends "index.html" %}
 
-{% if section %}
-<script>
-    $(function() {
-       $("html, body").animate({ scrollTop: $("#{{ contacts }}").offset().top }, 500);
-    });
-</script>
-{% endif %}
+{% block script_js %}
+    <img src="{{ url_for('static', filename='data/pict/law_pract.jpg')}}">
+
+hi there
+<!--<script>-->
+    <!--(function() {-->
+       <!--$("html, body").animate({ scrollTop: $("#contacts").offset().top }, 500);-->
+    <!--})();-->
+    <!--alert("hello");-->
+<!--</script>-->
+{% endblock %}
