@@ -102,20 +102,45 @@ ul.dropdown-content {
 
 .img-icon-fit {
     margin: auto;
-    max-height: 90px;
+    max-height: 80px;
 }
 
 .first-row {
     height: 380px;
 }
 
-.sec-row {
+.fst-row-src-col, .sec-row {
     height: 180px;
+}
+
+.slide-text {
+    color: #838383;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.first-row .slide-text, .fst-row-src-col .slide-text {
+    max-height: 90%;
+}
+
+.sec-row .slide-text {
+    max-height: 23%;
 }
 
 .img-fit {
     margin: auto;
     height: 90%;
+}
+
+.content_img_div {
+    margin: auto;
+}
+
+.image_content {
+    max-width: 80%;
+    min-height: 379px;
+    max-height: 380px;
 }
 
 #team-div{

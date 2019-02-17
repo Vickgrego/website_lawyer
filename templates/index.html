@@ -8,7 +8,7 @@
 <div class="panel panel-default" id="initial-stats">
     <div class="panel-heading">
         <span class="glyphicon glyphicon-stats"></span>
-        <strong> Наші досягнення за 2018 рік</strong>
+        <strong> Наші досягнення за минулий рік</strong>
     </div>
     <div class="panel-body row">
         <div class="col-md-3">
@@ -42,19 +42,26 @@
         <div class="row">
             <div class="row first-row col-md-8">
                 <img class="col-md-9 slide-elem img-responsive img-rounded img-fit"
-                     src="{{ url_for('static', filename='data/pict/4005.jpg') }}"/>
-                <p class="col-md-3 slide-text">text text text text text text text text text</p>
+                     src="{{ url_for('static', filename='data/pict/law_pract.jpg') }}"/>
+                <p class="col-md-3 slide-text">Наша команда - це адвокати з багаторічним досвідом роботи.
+                </p>
             </div>
 			<div class="row col-md-4 first-row">
-                <div class="row sec-row">
+                <div class="row fst-row-src-col">
                     <img class="col-md-9 slide-elem img-responsive img-rounded img-fit"
-                      src="{{ url_for('static', filename='data/pict/crew_3.jpg') }}"/>
-                    <p class="col-md-3 slide-text">second data second data second data second data</p>
+                      src="{{ url_for('static', filename='data/pict/mediation2.png') }}"/>
+                    <p class="col-md-3 slide-text">
+                        Медіатор, на відміну від третейського судді/арбітра, не виносить жодних рішень,
+                        він підтримує сторони на шляху розробки ними власного рішення.
+                    </p>
                 </div>
-                <div class="row sec-row">
+                <div class="row fst-row-src-col">
                     <img class="col-md-9 slide-elem img-responsive img-rounded img-fit"
-                      src="{{ url_for('static', filename='data/pict/phrase_2.jpg') }}"/>
-                    <p class="col-md-3 slide-text">some data some data some data some data</p>
+                      src="{{ url_for('static', filename='data/pict/school.jpeg') }}"/>
+                    <p class="col-md-3 slide-text">
+                        В Школі юридичної майстерності на базі нашого Адвокатського Бюро можна здобути знання та юридичну практику
+                        за короткий час, не відволікаючись від основного виду зайнятості чи роботи
+                    </p>
                 </div>
 			</div>
          </div>
@@ -63,22 +70,24 @@
             <div class="col-md-3 sec-row">
                 <img class="slide-elem img-responsive img-rounded img-fit"
                      src="{{ url_for('static', filename='data/pict/contact.jpg') }}"/>
-                <p class="slide-text">third data</p>
+                <p class="slide-text">Ми Вас чекаємо за адресою: м.Чернівці, вул.Прутська, 16.
+                    Телефон (037) 594 134 / 594 135</p>
             </div>
             <div class="col-md-3 sec-row">
                 <img class="slide-elem img-responsive img-rounded img-fit"
-                     src="{{ url_for('static', filename='data/pict/knot_crew.jpg') }}"/>
-                <p class="slide-text">forth data</p>
+                     src="{{ url_for('static', filename='data/pict/free_speech.jpg') }}"/>
+                <p class="slide-text">Захист свободи слова: Наше Адвокатське об'єднання партнер Інституту розвитку регіонально преси.</p>
             </div>
             <div class="col-md-3 sec-row">
                 <img class="slide-elem img-responsive img-rounded img-fit"
-                     src="{{ url_for('static', filename='data/pict/news.jpg') }}"/>
-                <p class="slide-text">fifth data</p>
+                     src="{{ url_for('static', filename='data/pict/biznes.jpg') }}"/>
+                <p class="slide-text">Надаємо правову допомогу бізнесу. Захищаємо від протиправних втручань державних органів
+                    та недобросовісної конкуренції.</p>
             </div>
             <div class="col-md-3 sec-row">
                 <img class="slide-elem img-responsive img-rounded img-fit"
-                     src="{{ url_for('static', filename='data/pict/the-simpsons-beatles-.jpg') }}"/>
-                <p class="slide-text">sixth data</p>
+                     src="{{ url_for('static', filename='data/pict/krym-sudich.png') }}"/>
+                <p class="slide-text">Захист клієнтів від кримінального переслідування.</p>
             </div>
         </div>
     </div>
@@ -112,15 +121,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-3">
                 <img class="team-photo img-circle img-responsive" alt="photo of our team"
                     src="{{ url_for('static', filename='data/lawyers/d_ven.jpg') }}" />
                 <div class="team-bio"><p>Дана Венгринюк</p></div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-3">
                 <img class="team-photo img-circle img-responsive" alt="photo of our team"
                      src="{{ url_for('static', filename='data/lawyers/m_big.jpg') }}" />
                 <div class="team-bio"><p>Михайло Бігусяк</p></div>
+            </div>
+            <div class="col-md-2">
             </div>
         </div>
     </div>

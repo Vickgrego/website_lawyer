@@ -5,8 +5,8 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    let interval = 7000;
-    let fadeVelocity = 500;
+    let interval = 10000;
+    let fadeVelocity = 700;
     setInterval(function () {
         var slidesArray = $(".slide-elem");
 	    var slidesTextArray = $(".slide-text");
