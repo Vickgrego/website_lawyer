@@ -147,7 +147,8 @@ ul.dropdown-content {
 }
 
 .thumbnail img{
-    max-height: 90%;
+    min-height: 79%;
+    max-height: 80%;
     display: block;
 }
 

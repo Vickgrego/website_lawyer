@@ -1,13 +1,8 @@
-from tempfile import mkdtemp
 import os
-from flask import Flask, request, url_for, jsonify
-from flask_basicauth import BasicAuth
-from flask_session import Session
+from flask import Flask
 
 from helpers import *
 
-
-ERROR = "I feel disturbance in force {}"
 
 # configure application
 app = Flask(__name__)
