@@ -37,14 +37,4 @@ $(document).ready(function () {
         });
     }, interval);
 
-    
-    //funct to scroll to the section
-    var headerHeight = $("#HeaderNavbar").height(); 
-    $(document).on('click', 'a', function (event) {
-        //event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top - headerHeight
-        }, 700);
-    });
 });
