@@ -119,15 +119,21 @@ ul.dropdown-content {
 }
 
 #team-div{
+    padding: 15px;
     
 }
 
 .team-photo {
     margin: auto;
-    height: 130px;
-    width: 130px;
+    min-height: 129px;
+    min-width: 129px;
+    max-height: 130px;
+    max-width: 130px;
 }
 
+.team-bio {
+    text-align: center;
+}
 
 #g-map{
     width: 400px;
