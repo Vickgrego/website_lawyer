@@ -133,11 +133,13 @@ ul.dropdown-content {
     height: 90%;
 }
 
-.content_img_div {
+.content_img_div img{
+    display:block;
     margin: auto;
 }
 
 .image_content {
+margin: auto;
     max-width: 80%;
     min-height: 379px;
     max-height: 380px;
